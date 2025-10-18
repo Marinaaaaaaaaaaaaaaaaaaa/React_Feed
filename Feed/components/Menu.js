@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
   },
   menuText: {
     fontSize: 16,
-    color: '#4a3941',
+    color: '#000000ff',
     fontWeight: '500',
   },
   underline: {
@@ -46,6 +46,6 @@ const styles = StyleSheet.create({
     height: 3,
     width: 70,
     borderRadius: 2,
-    backgroundColor: '#5b2f3b',
+    backgroundColor: '#000000ff',
   }
 });

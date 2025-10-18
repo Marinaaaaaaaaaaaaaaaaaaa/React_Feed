@@ -1,6 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import React, { useState } from 'react';
-import { FlatList, StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { StyleSheet, View} from 'react-native';
 
 import Menu from './components/Menu';
 import Profile from './components/Profile';

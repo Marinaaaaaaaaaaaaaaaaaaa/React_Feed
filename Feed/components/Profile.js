@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { TouchableOpacity, Text, StyleSheet, View, Image, Modal, TextInput, Pressable } from 'react-native';
+import { TouchableOpacity, Text, StyleSheet, View, Image, Modal, Pressable } from 'react-native';
 
 export default function Profile({nom, photo, heure}) {
 
@@ -32,27 +32,21 @@ export default function Profile({nom, photo, heure}) {
                 animationType="fade"
                 onRequestClose={() => setModalVisible(false)}
             >
-
                 <View style={[styles.btnAction, styles.commentaire2]}>
-    
 
-                    <Pressable style={[styles.btn, styles.btn2]} onPress={() => { setModalVisible(false);}}>
+                    <Pressable style={[styles.btn, styles.btn2]} onPress={() => {setModalVisible(false);}}>
                         <Text style={[styles.btnText, styles.btn2Text]}>Enregistrer le commentaire</Text>
                     </Pressable>
 
-                    <Pressable style={styles.btn} onPress={() => { setModalVisible(false);}}>
+                    <Pressable style={styles.btn} onPress={() => {setModalVisible(false);}}>
                         <Text style={styles.btnText}>Annuler</Text>
-                    </Pressable>  
-
+                    </Pressable>
 
                 </View>
-
             </Modal>
             
-
         </View>
-        
-
+    
     </View>
     
 
@@ -91,9 +85,8 @@ const styles = StyleSheet.create({
         marginTop: -3 ,
     },
     commentaire2: {
-      backgroundColor: '#fff',
+      backgroundColor: '#646464ff',
       borderRadius: 12,
-      border: '5px solid #000000ff',
       padding: 14,
       marginLeft: 'auto',
       marginRight: 'auto',
@@ -117,7 +110,7 @@ const styles = StyleSheet.create({
       marginTop: 10,
     },
     btn2: {
-      backgroundColor: '#5b2f3b',
+      backgroundColor: '#000000ff',
     },
     btnText: {
       color: '#333',
